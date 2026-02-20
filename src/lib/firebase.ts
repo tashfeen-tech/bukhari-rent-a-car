@@ -12,13 +12,13 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
-// Initialize Firebase only if config is available
-const app = (typeof window !== "undefined" && firebaseConfig.apiKey)
+// Initialize Firebase - safe for both server and client
+const app = firebaseConfig.apiKey
   ? (getApps().length > 0 ? getApp() : initializeApp(firebaseConfig))
   : null;
 
-const auth = app ? getAuth(app) : null as any;
-const db = app ? getFirestore(app) : null as any;
-const storage = app ? getStorage(app) : null as any;
+const auth = app ? getAuth(app) : (null as any);
+const db = app ? getFirestore(app) : (null as any);
+const storage = app ? getStorage(app) : (null as any);
 
 export { app, auth, db, storage };

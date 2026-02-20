@@ -2,12 +2,14 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { Car, Menu, X, Phone } from "lucide-react";
+import { Car, Menu, X, Phone, UserCircle } from "lucide-react";
 import styles from "./Navbar.module.css";
+import { useAuth } from "@/lib/AuthContext";
 
 const Navbar = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const { user, profile } = useAuth();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -34,6 +36,17 @@ const Navbar = () => {
                     <Link href="/fleet" className={styles.navLink}>Our Fleet</Link>
                     <Link href="/about" className={styles.navLink}>About</Link>
                     <Link href="/contact" className={styles.navLink}>Contact</Link>
+                    {user ? (
+                        <Link href="/my-bookings" className={styles.navLink} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                            <UserCircle size={18} />
+                            My Bookings
+                        </Link>
+                    ) : (
+                        <Link href="/auth" className={styles.navLink} style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                            <UserCircle size={18} />
+                            Sign In
+                        </Link>
+                    )}
                     <a href="tel:03476669992" className="btn-primary">
                         <Phone size={18} />
                         <span>Book Now</span>
@@ -56,6 +69,11 @@ const Navbar = () => {
                     <Link href="/fleet" onClick={() => setIsMobileMenuOpen(false)}>Our Fleet</Link>
                     <Link href="/about" onClick={() => setIsMobileMenuOpen(false)}>About</Link>
                     <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>Contact</Link>
+                    {user ? (
+                        <Link href="/my-bookings" onClick={() => setIsMobileMenuOpen(false)}>My Bookings</Link>
+                    ) : (
+                        <Link href="/auth" onClick={() => setIsMobileMenuOpen(false)}>Sign In</Link>
+                    )}
                     <a href="tel:03476669992" className="btn-primary">Book Now</a>
                 </div>
             )}
