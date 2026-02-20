@@ -18,7 +18,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 6000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/2020_Toyota_Yaris_Hybrid_Design_1.5_Front.jpg/1280px-2020_Toyota_Yaris_Hybrid_Design_1.5_Front.jpg',
+        image: '/cars/toyota-yaris.png',
         available: true,
         features: ['AC', 'Bluetooth', 'Airbags', 'Apple CarPlay']
     },
@@ -29,7 +29,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 8000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/2022_Honda_Civic_LX_Sedan%2C_front_right%2C_11-02-2022.jpg/1280px-2022_Honda_Civic_LX_Sedan%2C_front_right%2C_11-02-2022.jpg',
+        image: '/cars/honda-civic.png',
         available: true,
         features: ['Sunroof', 'Adaptive Cruise', 'Leather Seats', 'Lane Assist']
     },
@@ -40,7 +40,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 7,
         pricePerDay: 18000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_Kia_Sorento_SX_AWD_in_Snow_White_Pearl%2C_front_11.17.21.jpg/1280px-2021_Kia_Sorento_SX_AWD_in_Snow_White_Pearl%2C_front_11.17.21.jpg',
+        image: '/cars/kia-sorento.png',
         available: true,
         features: ['Panoramic Sunroof', 'All-Wheel Drive', 'Premium Audio', '7 Seater']
     },
@@ -51,7 +51,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 14000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2020_Toyota_Hilux_Revo_4x4_Double-Cab_2.8_Rocco.jpg/1280px-2020_Toyota_Hilux_Revo_4x4_Double-Cab_2.8_Rocco.jpg',
+        image: '/cars/toyota-hilux-revo.png',
         available: true,
         features: ['4x4', 'Off-road Capability', 'Turbo Diesel', 'Tow Bar']
     },
@@ -62,7 +62,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 12000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/2022_MG_HS_X.jpg/1280px-2022_MG_HS_X.jpg',
+        image: '/cars/mg-hs-trophy.png',
         available: true,
         features: ['Turbo Engine', 'Ambient Lighting', '360 Camera', 'Panoramic Roof']
     },
@@ -73,7 +73,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Manual',
         seats: 10,
         pricePerDay: 10000,
-        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2019_Toyota_HiAce_%28front%29.jpg/1280px-2019_Toyota_HiAce_%28front%29.jpg',
+        image: '/cars/toyota-hiace.png',
         available: true,
         features: ['10 Seater', 'Dual AC', 'Large Luggage Space', 'Group Travel']
     }
