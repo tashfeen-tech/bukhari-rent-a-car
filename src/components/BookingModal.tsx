@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, Calendar, User, Phone, Mail, Car as CarIcon } from "lucide-react";
+import { X, Calendar, User, Phone, Mail } from "lucide-react";
 import styles from "./BookingModal.module.css";
 import { Car } from "@/data/fleet";
 import { db } from "@/lib/firebase";
@@ -86,7 +86,7 @@ const BookingModal = ({ car, isOpen, onClose }: BookingModalProps) => {
                         <div className={styles.grid}>
                             <div className={styles.carInfo}>
                                 <div className={styles.carImagePlaceholder}>
-                                    <CarIcon size={48} color="var(--primary)" />
+                                    <img src={car.image} alt={car.name} style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '16px' }} />
                                 </div>
                                 <h3>{car.name}</h3>
                                 <p className={styles.carType}>{car.type}</p>

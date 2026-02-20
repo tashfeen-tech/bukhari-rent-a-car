@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -6,7 +6,11 @@ export const metadata: Metadata = {
   description: "Experience luxury and comfort with Bukhari Rent A Car. Best car rental services in Lahore with and without driver. Daily, weekly, and monthly rates available.",
   keywords: ["rent a car lahore", "bukhari rent a car", "luxury car rental pakistan", "car hire lahore", "with driver car rental"],
   authors: [{ name: "Bukhari Rent A Car" }],
-  viewport: "width=device-width, initial-scale=1",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

@@ -18,7 +18,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 8000,
-        image: '/cars/yaris.jpg',
+        image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800&q=80',
         available: true,
         features: ['AC', 'Bluetooth', 'Airbags']
     },
@@ -29,7 +29,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 15000,
-        image: '/cars/civic.jpg',
+        image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
         available: true,
         features: ['Sunroof', 'Adaptive Cruise', 'Leather Seats']
     },
@@ -40,7 +40,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 7,
         pricePerDay: 25000,
-        image: '/cars/sorento.jpg',
+        image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
         available: true,
         features: ['Panoramic Sunroof', 'All-Wheel Drive', 'Premium Audio']
     },
@@ -51,7 +51,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 22000,
-        image: '/cars/revo.jpg',
+        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
         available: true,
         features: ['4x4', 'Off-road capability', 'Turbo Diesel']
     },
@@ -62,7 +62,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Automatic',
         seats: 5,
         pricePerDay: 18000,
-        image: '/cars/mghs.jpg',
+        image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
         available: true,
         features: ['Turbo Engine', 'Ambient Lighting', '360 Camera']
     },
@@ -73,7 +73,7 @@ export const FLEET_DATA: Car[] = [
         transmission: 'Manual',
         seats: 10,
         pricePerDay: 12000,
-        image: '/cars/hiace.jpg',
+        image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
         available: true,
         features: ['10 Seater', 'Dual AC', 'Large Luggage Space']
     }

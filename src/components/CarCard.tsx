@@ -16,10 +16,13 @@ const CarCard = ({ car }: CarCardProps) => {
             className={styles.card}
         >
             <div className={styles.imageContainer}>
-                {/* Placeholder for car image */}
-                <div className={styles.imagePlaceholder}>
-                    <span className={styles.carType}>{car.type}</span>
-                </div>
+                <img
+                    src={car.image}
+                    alt={car.name}
+                    className={styles.carImage}
+                    loading="lazy"
+                />
+                <span className={styles.carTypeBadge}>{car.type}</span>
             </div>
 
             <div className={styles.content}>
