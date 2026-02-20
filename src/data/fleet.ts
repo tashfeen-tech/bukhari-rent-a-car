@@ -17,10 +17,10 @@ export const FLEET_DATA: Car[] = [
         type: 'Sedan',
         transmission: 'Automatic',
         seats: 5,
-        pricePerDay: 8000,
-        image: 'https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800&q=80',
+        pricePerDay: 6000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/2020_Toyota_Yaris_Hybrid_Design_1.5_Front.jpg/1280px-2020_Toyota_Yaris_Hybrid_Design_1.5_Front.jpg',
         available: true,
-        features: ['AC', 'Bluetooth', 'Airbags']
+        features: ['AC', 'Bluetooth', 'Airbags', 'Apple CarPlay']
     },
     {
         id: 'honda-civic-2023',
@@ -28,10 +28,10 @@ export const FLEET_DATA: Car[] = [
         type: 'Premium Sedan',
         transmission: 'Automatic',
         seats: 5,
-        pricePerDay: 15000,
-        image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?w=800&q=80',
+        pricePerDay: 8000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/2022_Honda_Civic_LX_Sedan%2C_front_right%2C_11-02-2022.jpg/1280px-2022_Honda_Civic_LX_Sedan%2C_front_right%2C_11-02-2022.jpg',
         available: true,
-        features: ['Sunroof', 'Adaptive Cruise', 'Leather Seats']
+        features: ['Sunroof', 'Adaptive Cruise', 'Leather Seats', 'Lane Assist']
     },
     {
         id: 'kia-sorento',
@@ -39,10 +39,10 @@ export const FLEET_DATA: Car[] = [
         type: 'SUV',
         transmission: 'Automatic',
         seats: 7,
-        pricePerDay: 25000,
-        image: 'https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?w=800&q=80',
+        pricePerDay: 18000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/2021_Kia_Sorento_SX_AWD_in_Snow_White_Pearl%2C_front_11.17.21.jpg/1280px-2021_Kia_Sorento_SX_AWD_in_Snow_White_Pearl%2C_front_11.17.21.jpg',
         available: true,
-        features: ['Panoramic Sunroof', 'All-Wheel Drive', 'Premium Audio']
+        features: ['Panoramic Sunroof', 'All-Wheel Drive', 'Premium Audio', '7 Seater']
     },
     {
         id: 'toyota-revo',
@@ -50,10 +50,10 @@ export const FLEET_DATA: Car[] = [
         type: 'Pickup / 4x4',
         transmission: 'Automatic',
         seats: 5,
-        pricePerDay: 22000,
-        image: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+        pricePerDay: 14000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/2020_Toyota_Hilux_Revo_4x4_Double-Cab_2.8_Rocco.jpg/1280px-2020_Toyota_Hilux_Revo_4x4_Double-Cab_2.8_Rocco.jpg',
         available: true,
-        features: ['4x4', 'Off-road capability', 'Turbo Diesel']
+        features: ['4x4', 'Off-road Capability', 'Turbo Diesel', 'Tow Bar']
     },
     {
         id: 'mg-hs',
@@ -61,10 +61,10 @@ export const FLEET_DATA: Car[] = [
         type: 'SUV',
         transmission: 'Automatic',
         seats: 5,
-        pricePerDay: 18000,
-        image: 'https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&q=80',
+        pricePerDay: 12000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/2022_MG_HS_X.jpg/1280px-2022_MG_HS_X.jpg',
         available: true,
-        features: ['Turbo Engine', 'Ambient Lighting', '360 Camera']
+        features: ['Turbo Engine', 'Ambient Lighting', '360 Camera', 'Panoramic Roof']
     },
     {
         id: 'hiace-10',
@@ -72,9 +72,10 @@ export const FLEET_DATA: Car[] = [
         type: 'Van',
         transmission: 'Manual',
         seats: 10,
-        pricePerDay: 12000,
-        image: 'https://images.unsplash.com/photo-1544636331-e26879cd4d9b?w=800&q=80',
+        pricePerDay: 10000,
+        image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/2019_Toyota_HiAce_%28front%29.jpg/1280px-2019_Toyota_HiAce_%28front%29.jpg',
         available: true,
-        features: ['10 Seater', 'Dual AC', 'Large Luggage Space']
+        features: ['10 Seater', 'Dual AC', 'Large Luggage Space', 'Group Travel']
     }
 ];
+

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import "./globals.css";
+import Providers from "@/components/Providers";
 
 export const metadata: Metadata = {
   title: "Bukhari Rent A Car | Premium Car Rental Lahore",
@@ -21,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <main>{children}</main>
-        {/* Footer could go here */}
+        <Providers>
+          <main>{children}</main>
+        </Providers>
       </body>
     </html>
   );
 }
+
