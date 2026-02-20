@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bukhari Rent A Car - Booking Application
 
-## Getting Started
+A premium, high-performance car booking web application built with Next.js and Firebase.
 
-First, run the development server:
+## 🚀 Features
+- **Premium UI/UX**: Dark-themed luxury interface with smooth animations and glassmorphism.
+- **Dynamic Fleet**: Easily manage and display your vehicle collection.
+- **Real-time Bookings**: Instant booking requests saved to Firestore.
+- **Price Calculation**: Automatic price calculation based on rental duration.
+- **Mobile Responsive**: Fully optimized for phones and tablets.
 
+## 🛠️ Technology Stack
+- **Frontend**: Next.js (App Router), Framer Motion, Lucide React.
+- **Backend/Database**: Firebase (Firestore).
+- **Styling**: Pure CSS Modules for maximum performance and customization.
+
+## 📦 Setup Instructions
+
+### 1. Firebase Configuration
+1. Go to [Firebase Console](https://console.firebase.google.com/).
+2. Create a new project named "Bukhari Rent A Car".
+3. Add a Web App to the project.
+4. Enable **Cloud Firestore** and **Authentication** (Email/Password).
+5. Copy your Firebase Configuration and paste it into a `.env.local` file (use `.env.example` as a template).
+
+### 2. Local Development
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Deployment
+The project is optimized for deployment on **Vercel**. 
+1. Push this repository to your GitHub.
+2. Connect the repository to Vercel.
+3. Add the environment variables from your `.env.local` to the Vercel project settings.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📂 Project Structure
+- `src/app`: Main pages and global styles.
+- `src/components`: Reusable UI components (Navbar, Hero, BookingModal).
+- `src/data`: Fleet data and constant configurations.
+- `src/lib`: Firebase and other utility configurations.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🎨 Branding
+- **Primary Color**: `#d4af37` (Premium Gold)
+- **Background**: `#050505` (Deep Black)
+- **Typography**: Outfit (Modern & Sleek)
