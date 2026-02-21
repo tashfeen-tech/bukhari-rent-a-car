@@ -8,6 +8,7 @@ import {
 } from "firebase/firestore";
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { onAuthStateChanged, signOut } from "firebase/auth";
+import { useAuth } from "@/lib/AuthContext";
 import { useRouter } from "next/navigation";
 import {
     Car,
@@ -59,25 +60,23 @@ export default function AdminDashboard() {
     const [bookings, setBookings] = useState<Booking[]>([]);
     const [messages, setMessages] = useState<ContactMessage[]>([]);
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState<any>(null);
     const [activeTab, setActiveTab] = useState<Tab>("dashboard");
+    const { user, profile, loading: authLoading, logout: authLogout } = useAuth();
     const router = useRouter();
 
     useEffect(() => {
-        const unsubscribeAuth = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                setUser(user);
-            } else {
+        if (!authLoading) {
+            if (!user) {
                 router.push("/admin/login");
+            } else if (profile?.role !== "admin") {
+                router.push("/"); // Redirect non-admins to home
             }
-        });
-
-        return () => unsubscribeAuth();
-    }, [router]);
+        }
+    }, [user, profile, authLoading, router]);
 
     // Bookings listener
     useEffect(() => {
-        if (!user) return;
+        if (!user || profile?.role !== "admin") return;
 
         const q = query(collection(db, "bookings"), orderBy("createdAt", "desc"));
         const unsubscribe = onSnapshot(q, (snapshot) => {
